@@ -44,7 +44,7 @@ public class logDatabaseHelper extends SQLiteOpenHelper {
 	@Override
 	public void onCreate(SQLiteDatabase db) {
 		//Create three new tables
-		String create_query1 = "create table "+TABLE_BODY+" (_id integer primary key autoincrement, timestamp integer, "
+		String create_query1 = "create table "+TABLE_BODY+" (_id integer primary key autoincrement, timestamp long, "
 				+"hr int, systolic int, diastolic int, weight int, glucose int)";
 		
 		String create_query2 = "create table "+TABLE_MIND+" (_id integer primary key autoincrement, timestamp integer, "

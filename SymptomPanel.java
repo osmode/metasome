@@ -12,15 +12,15 @@ public class SymptomPanel {
 	private int fatigue = 0;
 	private int inhaler = 0;
 	
-	public SymptomPanel(int newSob, int newEdema, int newCough, int newSpeed, int newPain, 
+	public SymptomPanel(long newTimestamp, int newSob, int newEdema, int newCough, int newSpeed, int newPain, 
 			int newFatigue, int newInhaler) {
 
 		timestamp = System.currentTimeMillis() / 1000L;
-		setAll(newSob, newEdema, newCough, newSpeed, newPain, newFatigue, newInhaler);
+		setAll(newTimestamp, newSob, newEdema, newCough, newSpeed, newPain, newFatigue, newInhaler);
 		
 	}
 	
-	public void setAll(int newSob, int newEdema, int newCough, int newSpeed, int newPain, 
+	public void setAll(long newTimestamp, int newSob, int newEdema, int newCough, int newSpeed, int newPain, 
 		int newFatigue, int newInhaler) {
 		
 		sob = newSob;

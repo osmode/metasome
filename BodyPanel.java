@@ -12,14 +12,15 @@ public class BodyPanel {
 	private int weight = 0;
 	private int glucose = 0;
 	
-	public BodyPanel(int newHr, int newSystolic, int newDiastolic, int newWeight, int newGlucose) {
+	public BodyPanel(long newTimestamp, int newHr, int newSystolic, int newDiastolic, int newWeight, int newGlucose) {
 		timestamp = System.currentTimeMillis() / 1000L;
-		setAll(newHr, newSystolic, newDiastolic, newWeight, newGlucose);
+		setAll(newTimestamp, newHr, newSystolic, newDiastolic, newWeight, newGlucose);
 	}
 	
-	public void setAll(int newHr, int newSystolic, int newDiastolic, 
+	public void setAll(long newTimestamp, int newHr, int newSystolic, int newDiastolic, 
 		int newWeight, int newGlucose) {
 		
+		timestamp = newTimestamp;
 		hr = newHr;
 		systolic = newSystolic;
 		diastolic = newDiastolic;

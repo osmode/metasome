@@ -8,7 +8,7 @@ import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
 import android.util.Log;
 
-import com.logisome.medisome.R;
+import com.logisome.metasome.R;
 
 public abstract class SingleFragmentActivity extends FragmentActivity {
 	

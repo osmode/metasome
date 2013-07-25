@@ -18,16 +18,16 @@ public class MindPanel {
 	private int libido = 0;
 	
 	
-	public MindPanel(int newSleep, int newMood, int newAnxiety, 
+	public MindPanel(long newTimestamp, int newSleep, int newMood, int newAnxiety, 
 			int newEnergy, int newConcentration, int newAppetite, int newLibido) {
 
-			setAll(newSleep, newMood, newAnxiety, newEnergy, newConcentration,
+			setAll(newTimestamp, newSleep, newMood, newAnxiety, newEnergy, newConcentration,
 				newAppetite, newLibido);
 			
 			timestamp = System.currentTimeMillis() / 1000L;
 	}
 	
-	public void setAll (int newSleep, int newMood, int newAnxiety, 
+	public void setAll (long newTimestamp, int newSleep, int newMood, int newAnxiety, 
 		int newEnergy, int newConcentration, int newAppetite, int newLibido) {
 		
 		sleep = newSleep;
